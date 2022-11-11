@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Noteful</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="noteful">Noteful</string>
+    <string name="logonoteful">logoNoteful</string>
+    <string name="palavra_passe">Palavra-Passe:</string>
+    <string name="nome_utilizador">Nome Utilizador:</string>
+    <string name="login">Login</string>
+    <string name="registar">registar</string>
+</resources>
