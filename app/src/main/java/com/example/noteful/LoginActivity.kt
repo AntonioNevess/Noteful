@@ -1,6 +1,7 @@
 package com.example.noteful
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,8 +17,14 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    fun transicao(view: View) {
+    fun transicaoLogin(view: View) {
         startActivity(Intent(this@LoginActivity, MainActivity::class.java))
         finish()
     }
+
+    fun transicaoRegistar(view: View){
+        startActivity(Intent(this@LoginActivity, RegistarActivity::class.java))
+        finish()
+    }
+
 }
