@@ -9,6 +9,7 @@ class RegistarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registar)
+        supportActionBar?.hide()
     }
 
     fun transicaoMain(view: View) {
