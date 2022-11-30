@@ -9,7 +9,7 @@
     tools:context=".RegistarActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logoNoteful"
         android:layout_width="250dp"
         android:layout_height="150dp"
         android:layout_marginStart="40dp"
@@ -27,7 +27,7 @@
 
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/usernameTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -45,7 +45,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,7 @@
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/passwordTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -74,12 +74,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTxt"
         app:passwordToggleEnabled="true"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/confPWTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -100,12 +100,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTxt"
         app:passwordToggleEnabled="true"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button4"
+        android:id="@+id/registarBtn"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginStart="71dp"
@@ -123,7 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/confPWTxt"
         app:layout_constraintVertical_bias="0.608" />
 
 

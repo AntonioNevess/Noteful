@@ -1,17 +1,12 @@
 package com.example.noteful
 
 import android.content.Intent
-import android.graphics.Color
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,11 +20,12 @@ class LoginActivity : AppCompatActivity() {
         animationDrawable.setExitFadeDuration(2000)
         animationDrawable.start()
 
-        val btnRegistar = findViewById(R.id.textView4) as TextView
+        val btnRegistar = findViewById<TextView>(R.id.registarTxt)
         btnRegistar.setOnClickListener {
             startActivity(Intent(this@LoginActivity, RegistarActivity::class.java))
             finish()
         }
+
     }
 
     fun transicaoLogin(view: View) {
