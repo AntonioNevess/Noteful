@@ -2,16 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blue_background"
+    android:background="@drawable/gradient_list"
     android:forceDarkAllowed="false"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:background="@drawable/logo_background"
-        android:backgroundTint="@color/white"
         android:layout_width="250dp"
         android:layout_height="150dp"
         android:layout_marginStart="40dp"
@@ -38,9 +37,9 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="104dp"
         android:background="@drawable/rounded_corners"
-        android:hint="Nome Utilizador"
         android:drawableLeft="@drawable/ic_username"
         android:drawablePadding="5dp"
+        android:hint="Nome Utilizador"
         android:includeFontPadding="false"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -54,28 +53,31 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rounded_corners"
-        android:hint="Palavra-Passe"
         android:drawableLeft="@drawable/ic_password"
         android:drawablePadding="5dp"
+        android:hint="Palavra-Passe"
         android:includeFontPadding="false"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:passwordToggleEnabled="true"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 
@@ -88,9 +90,10 @@
         android:layout_marginBottom="164dp"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white"
+        android:forceDarkAllowed="false"
         android:onClick="transicaoLogin"
         android:text="Log in"
-        android:textColor="@color/light_blue"
+        android:textColor="#111d7a"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,12 +101,12 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintVertical_bias="0.412" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="186dp"
-        android:layout_height="0dp"
+        android:layout_width="269dp"
+        android:layout_height="34dp"
         android:layout_marginBottom="399dp"
         android:text="Não tem conta? Clique aqui para registar."
         android:textColor="@color/white"

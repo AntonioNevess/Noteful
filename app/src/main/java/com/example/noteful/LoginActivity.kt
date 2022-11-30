@@ -2,9 +2,12 @@ package com.example.noteful
 
 import android.content.Intent
 import android.graphics.Color
+import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -16,6 +19,17 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         supportActionBar?.hide()
 
+        val constraintLayout: ConstraintLayout = findViewById(R.id.loginLayout)
+        val animationDrawable: AnimationDrawable = constraintLayout.background as AnimationDrawable
+        animationDrawable.setEnterFadeDuration(1000)
+        animationDrawable.setExitFadeDuration(2000)
+        animationDrawable.start()
+
+        val btnRegistar = findViewById(R.id.textView4) as TextView
+        btnRegistar.setOnClickListener {
+            startActivity(Intent(this@LoginActivity, RegistarActivity::class.java))
+            finish()
+        }
     }
 
     fun transicaoLogin(view: View) {
@@ -23,9 +37,6 @@ class LoginActivity : AppCompatActivity() {
         finish()
     }
 
-    fun transicaoRegistar(view: View){
-        startActivity(Intent(this@LoginActivity, RegistarActivity::class.java))
-        finish()
-    }
+
 
 }
